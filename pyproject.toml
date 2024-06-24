@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "secret_store"
+version = "0.1.0"
+description = "A package for managing secrets across applications."
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+hvac = "^0.10.5"  # Assuming hvac is a dependency, adjust the version as needed.
+pytest = { version = "^6.2.4", optional = true }
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.extras]
+testing = ["pytest"]
